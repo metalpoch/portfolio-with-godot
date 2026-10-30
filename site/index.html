@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keiber Urbila — Fullstack Developer | Backend &amp; Telecomunicaciones</title>
+  <meta name="description" content="Portafolio de Keiber Urbila, desarrollador fullstack en Caracas: backend escalable, monitoreo de redes y datos. Go, Python, Node.js y 7+ años en telecomunicaciones.">
+  <meta name="author" content="Keiber Abraham Urbila Padrino">
+  <meta name="theme-color" content="#080D18">
+  <link rel="canonical" href="https://keiberup.dev/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_VE">
+  <meta property="og:site_name" content="Keiber Urbila">
+  <meta property="og:title" content="Keiber Urbila — Fullstack Developer | Backend &amp; Telecomunicaciones">
+  <meta property="og:description" content="Sistemas que aguantan. Interfaces que se sienten vivas. Backend, redes y datos desde Caracas, Venezuela.">
+  <meta property="og:url" content="https://keiberup.dev/">
+  <meta property="og:image" content="https://keiberup.dev/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Keiber Urbila — Fullstack Developer. Portada con el personaje pixel art Poch.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Keiber Urbila — Fullstack Developer | Backend &amp; Telecomunicaciones">
+  <meta name="twitter:description" content="Sistemas que aguantan. Interfaces que se sienten vivas. Backend, redes y datos desde Caracas, Venezuela.">
+  <meta name="twitter:image" content="https://keiberup.dev/assets/img/og-cover.png">
+  <meta name="twitter:image:alt" content="Keiber Urbila — Fullstack Developer.">
+
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/ambient/bg.png" as="image">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/ambient.js" defer></script>
+  <noscript><style>#ambient-boot,.ambient-hud,.ambient-world{display:none!important}</style></noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Keiber Abraham Urbila Padrino",
+    "alternateName": "Keiber Urbila",
+    "jobTitle": "Fullstack Developer | Backend & Telecomunicaciones",
+    "email": "mailto:keiberup.dev@gmail.com",
+    "telephone": "+584129445775",
+    "url": "https://keiberup.dev/",
+    "sameAs": ["https://linkedin.com/in/keiber-urbila/"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Caracas",
+      "addressCountry": "VE"
+    },
+    "knowsAbout": ["Go", "Python", "JavaScript", "Node.js", "Microservicios", "SNMP", "Telemetría", "PostgreSQL", "MongoDB", "Redis", "Docker", "React", "Astro"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="ambient-world" id="ambient-world" aria-hidden="true">
+    <div class="ambient-bg"></div>
+    <canvas class="ambient-canvas" id="ambient-canvas"></canvas>
+    <div class="ambient-veil"></div>
+  </div>
+
+  <div class="page-texture" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Keiber Urbila, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/img/poch-icon.png" width="16" height="16" alt="">
+        </span>
+        <span class="brand-text">keiberup<span class="brand-cursor" aria-hidden="true">_</span></span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#sobre-mi"><span class="nav-index" aria-hidden="true">01</span>Sobre mí</a></li>
+          <li><a href="#experiencia"><span class="nav-index" aria-hidden="true">02</span>Experiencia</a></li>
+          <li><a href="#stack"><span class="nav-index" aria-hidden="true">03</span>Stack</a></li>
+          <li><a href="#proyectos"><span class="nav-index" aria-hidden="true">04</span>Proyectos</a></li>
+          <li><a href="#jugar"><span class="nav-index" aria-hidden="true">05</span>Jugar</a></li>
+        </ul>
+        <div class="nav-extras">
+          <a class="btn btn-ghost" href="assets/CV-Keiber-Urbila.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-primary" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+          <p class="nav-note"><span aria-hidden="true">//</span> Caracas, VE · GMT−4</p>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cv" href="assets/CV-Keiber-Urbila.pdf" download aria-label="Descargar CV de Keiber Urbila en PDF">
+          <span>CV</span><span class="header-cv-arrow" aria-hidden="true">↓</span>
+        </a>
+        <a class="btn btn-primary btn-small header-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            FULLSTACK DEVELOPER <span class="eyebrow-slash" aria-hidden="true">/</span> CARACAS, VE
+          </p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="title-line">Sistemas que</span>
+            <span class="title-line">aguantan.</span>
+            <span class="title-line title-line--accent">Interfaces que se</span>
+            <span class="title-line title-line--accent">sienten vivas.</span>
+          </h1>
+          <p class="hero-lede">Siete años construyendo backend, monitoreo de redes y herramientas de datos que sostienen operaciones reales. Go, Python y JavaScript; de la telemetría de CANTV al streaming en vivo.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#jugar">
+              Jugar la experiencia
+              <span class="btn-arrow" aria-hidden="true">↘</span>
+            </a>
+            <a class="btn btn-ghost" href="assets/CV-Keiber-Urbila.pdf" download>
+              Descargar CV
+              <span class="btn-arrow" aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <p class="hero-meta"><span aria-hidden="true">//</span> BACKEND · REDES · DATOS <span class="hero-meta-sep" aria-hidden="true">—</span> CARACAS, VE</p>
+        </div>
+
+        <div class="hero-side">
+          <p class="coordinate-tag" aria-hidden="true">10.4806° N<br>66.9036° O</p>
+          <div class="player-card" aria-labelledby="poch-name">
+            <div class="player-card-top">
+              <span>PLAYER CARD // 01</span>
+              <span class="player-lv">LV. 07</span>
+            </div>
+            <div class="player-screen">
+              <div class="player-grid" aria-hidden="true"></div>
+              <p class="player-coords" aria-hidden="true">X 048 / Y 028</p>
+              <div class="player-sprite-wrap" aria-hidden="true">
+                <div class="pixel-sprite player-sprite"></div>
+              </div>
+              <div class="player-platform" aria-hidden="true"><span></span><span></span><span></span></div>
+              <p class="player-ready" aria-hidden="true"><span></span> SIGNAL OK</p>
+            </div>
+            <div class="player-info">
+              <div class="player-name-row">
+                <p class="player-name pixel-16" id="poch-name">POCH</p>
+                <p class="player-role">// COMPAÑERO DE EQUIPO</p>
+              </div>
+              <dl class="player-stats">
+                <div><dt>ROL</dt><dd>FULLSTACK</dd></div>
+                <div><dt>BASE</dt><dd>CARACAS, VE</dd></div>
+                <div><dt>SPECIAL</dt><dd>SNMP + GO</dd></div>
+              </dl>
+              <div class="player-signal">
+                <span>SEÑAL</span>
+                <span class="signal-pips" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+                <span>98%</span>
+              </div>
+            </div>
+            <div class="player-card-foot">
+              <span>EST. 2018</span>
+              <span class="player-foot-right"><span class="status-dot" aria-hidden="true"></span> READY</span>
+            </div>
+          </div>
+          <p class="hero-side-note" aria-hidden="true">SIDE QUEST<br><span>// MUEVE EL CURSOR: POCH TE SIGUE</span></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-metrics" aria-label="Métricas destacadas">
+          <div class="metric">
+            <span class="metric-code" aria-hidden="true">YRS</span>
+            <span class="metric-value">7+</span>
+            <span class="metric-label">años en telecomunicaciones y desarrollo</span>
+          </div>
+          <div class="metric">
+            <span class="metric-code" aria-hidden="true">TPM</span>
+            <span class="metric-value">+200k</span>
+            <span class="metric-label">mediciones diarias en redes ONT</span>
+          </div>
+          <div class="metric">
+            <span class="metric-code" aria-hidden="true">ERR</span>
+            <span class="metric-value">−25%</span>
+            <span class="metric-label">fallas críticas en operación</span>
+          </div>
+          <div class="metric">
+            <span class="metric-code" aria-hidden="true">LAT</span>
+            <span class="metric-value">&lt;200ms</span>
+            <span class="metric-label">de latencia en streaming en vivo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero-footline">
+        <span class="scroll-cue" aria-hidden="true"><span></span> DESLIZA PARA EXPLORAR</span>
+        <span class="hero-footcode" aria-hidden="true">PORTFOLIO_2026 / CARACAS</span>
+      </div>
+    </section>
+
+    <section class="section section-about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-rail">
+            <p class="section-label"><span>01</span> SOBRE MÍ</p>
+            <p class="section-rail-note">Perfil / enfoque / coordenadas</p>
+          </div>
+          <div class="section-heading">
+            <h2 id="about-title">Construyo donde el software toca la red.</h2>
+            <p class="section-intro">Ingeniería de producto con los pies en la infraestructura: menos promesas, más sistemas observables y mantenibles.</p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="about-lead">Soy Keiber Urbila, desarrollador fullstack radicado en Caracas. Llevo más de siete años trabajando donde el software se encuentra con la infraestructura: redes de telecomunicaciones, servidores Linux y operaciones que no pueden permitirse fallar.</p>
+            <p>Mi trabajo combina backend escalable, monitoreo de redes y análisis de datos. He construido sistemas de telemetría para más de 200k mediciones diarias en redes ONT, dashboards SNMP para redes ADSL y APIs y microservicios en Go, Python y Node.js desplegados con Docker.</p>
+            <p>Disfruto migrar sistemas legacy hacia arquitecturas más claras, automatizar lo repetitivo y medir antes de opinar. Si un proceso duele, primero lo observo; después construyo la forma de hacerlo sostenible.</p>
+            <p class="about-pull"><span aria-hidden="true">▚</span> Del cable al clúster, sin perder el detalle.</p>
+          </div>
+
+          <aside class="profile-card" aria-labelledby="profile-title">
+            <div class="profile-card-bar">
+              <span id="profile-title">FICHA TÉCNICA</span>
+              <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+            <dl class="profile-list">
+              <div>
+                <dt>Ubicación</dt>
+                <dd>Caracas, Venezuela <span>GMT−4</span></dd>
+              </div>
+              <div>
+                <dt>Disponibilidad</dt>
+                <dd class="available"><span class="status-dot" aria-hidden="true"></span> Abierto a nuevos retos</dd>
+              </div>
+              <div>
+                <dt>Modalidad</dt>
+                <dd>Remoto · proyectos presenciales en Caracas</dd>
+              </div>
+              <div>
+                <dt>Enfoque</dt>
+                <dd>Backend · Redes · Datos</dd>
+              </div>
+            </dl>
+            <div class="terminal" aria-label="Resumen de perfil en formato terminal">
+              <div class="terminal-bar" aria-hidden="true"><span></span><span></span><span></span><em>~/perfil</em></div>
+              <div class="terminal-body">
+                <p><span class="terminal-prompt">$</span> whoami</p>
+                <p class="terminal-out">keiber.urbila</p>
+                <p><span class="terminal-prompt">$</span> cat enfoque.txt</p>
+                <p class="terminal-out">backend, redes, datos<span class="terminal-cursor" aria-hidden="true"></span></p>
+              </div>
+            </div>
+            <a class="profile-cv" href="assets/CV-Keiber-Urbila.pdf" download>
+              <span>Descargar CV completo</span>
+              <span aria-hidden="true">PDF ↓</span>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-game" id="jugar" aria-labelledby="game-title">
+      <div class="container">
+        <div class="game-head">
+          <div class="game-head-main">
+            <p class="section-label"><span>02</span> EXPERIENCIA INTERACTIVA <span class="label-build">// GODOT 4.7</span></p>
+            <h2 class="game-title" id="game-title">
+              <span class="game-title-pixel pixel-24">POCHLAND</span>
+              <span class="game-title-sub">// SIGUE LA LUZ</span>
+            </h2>
+          </div>
+          <div class="game-intro">
+            <p class="game-tagline">Mueve el cursor.<br><span>Poch resuelve el resto.</span></p>
+            <p>Poch es un personaje autónomo: salta plataformas, rompe cajas y esquiva bugs para quedarse junto a tu cursor. Acércalo para cargar la señal.</p>
+          </div>
+        </div>
+
+        <div class="game-layout">
+          <div class="game-column">
+            <div class="game-frame" id="game-frame">
+              <div class="game-poster" id="game-poster">
+                <div class="poster-art" aria-hidden="true">
+                  <div class="poster-stars"></div>
+                  <div class="poster-glow"></div>
+                  <div class="poster-grid-floor"></div>
+                  <div class="poster-skyline"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="poster-platform"><span></span><span></span><span></span><span></span></div>
+                  <div class="poster-sprite-wrap">
+                    <div class="pixel-sprite poster-sprite"></div>
+                    <div class="poster-sprite-shadow"></div>
+                  </div>
+                  <span class="poster-crosshair"></span>
+                  <span class="poster-coin poster-coin--a"></span>
+                  <span class="poster-coin poster-coin--b"></span>
+                </div>
+                <div class="poster-meta poster-meta--top">
+                  <span>BUILD 4.7 / WEB</span>
+                  <span>SECTOR 07</span>
+                </div>
+                <div class="poster-content">
+                  <div class="poster-copy">
+                    <p class="poster-kicker pixel-8">UNA EXPERIENCIA INTERACTIVA</p>
+                    <p class="poster-logo pixel-24">POCHLAND</p>
+                    <p class="poster-sub">// SIGUE LA LUZ</p>
+                  </div>
+                  <div class="poster-action">
+                    <button class="btn-start" id="start-game" type="button">
+                      <span>ENTRAR AL JUEGO</span>
+                      <span class="btn-start-arrow" aria-hidden="true">→</span>
+                    </button>
+                    <p class="poster-hint">CLIC PARA CONECTAR · AUDIO AL ENTRAR</p>
+                  </div>
+                </div>
+                <div class="poster-meta poster-meta--bottom">
+                  <span>X 048 / Y 028</span>
+                  <span class="poster-build"><span class="status-dot" aria-hidden="true"></span> SIGNAL READY</span>
+                </div>
+              </div>
+
+              <div class="game-mount" id="game-mount"></div>
+
+              <div class="game-loading" id="game-loading" hidden tabindex="-1">
+                <div class="loader-pixels" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+                <p class="loader-kicker">POCHLAND // BOOT SEQUENCE</p>
+                <p class="loader-title">Estableciendo enlace</p>
+                <p class="loader-status" id="game-status" role="status" aria-live="polite">Preparando el canal con Pochland…</p>
+                <div class="loader-meter" aria-hidden="true"><span></span></div>
+                <p class="loader-note">El primer paquete puede tardar unos segundos.</p>
+                <a class="loader-fallback" id="game-fallback" href="game/index.html" target="_blank" rel="noopener noreferrer" hidden>Abrir el juego en una pestaña <span aria-hidden="true">↗</span></a>
+              </div>
+
+              <button class="fs-exit" id="fs-exit" type="button" aria-label="Salir de pantalla completa">
+                <span aria-hidden="true">×</span> Salir
+              </button>
+
+              <div class="game-rotate" aria-hidden="true">
+                <span class="game-rotate-phone"><i></i></span>
+                <p class="game-rotate-kicker">FORMATO 16:9</p>
+                <p class="game-rotate-title">Gira tu móvil</p>
+                <p class="game-rotate-copy">La experiencia se ve mejor en horizontal. Gira el dispositivo para jugar a pantalla completa.</p>
+              </div>
+            </div>
+
+            <div class="game-caption">
+              <p><span aria-hidden="true">↳</span> Sin descargas: el juego se carga sólo al entrar.</p>
+              <p class="game-caption-right" aria-hidden="true">16:9 / POINTER + TOUCH</p>
+            </div>
+          </div>
+
+          <aside class="hud" id="hud" aria-label="Panel de telemetría del juego">
+            <div class="hud-head">
+              <span class="hud-kicker">HUD // TELEMETRÍA</span>
+              <span class="hud-state" id="hud-state" aria-live="polite"><span class="status-dot" aria-hidden="true"></span> <span id="hud-state-text">EN ESPERA</span></span>
+            </div>
+
+            <div class="hud-block">
+              <div class="hud-label-row">
+                <span class="hud-label">SEÑAL</span>
+                <span class="hud-number" id="signal-value">0%</span>
+              </div>
+              <div class="signal-bar" id="signal-bar" role="progressbar" aria-label="Señal de Poch" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                <span class="signal-fill" id="signal-fill"></span>
+                <span class="signal-ticks" aria-hidden="true"></span>
+              </div>
+              <div class="hud-scale" aria-hidden="true"><span>0</span><span>50</span><span>100</span></div>
+            </div>
+
+            <div class="hud-counters">
+              <div class="hud-counter">
+                <span class="hud-label">PAQUETES</span>
+                <span class="hud-count" id="packet-count">000</span>
+              </div>
+              <div class="hud-counter">
+                <span class="hud-label">MEJOR SEÑAL</span>
+                <span class="hud-count" id="best-score">0%</span>
+              </div>
+            </div>
+
+            <div class="hud-event-row">
+              <span class="hud-event-dot" aria-hidden="true"></span>
+              <p class="hud-event" id="hud-event" aria-live="polite">SISTEMA EN ESPERA</p>
+            </div>
+
+            <div class="hud-actions">
+              <button class="hud-btn" id="fs-btn" type="button" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg>
+                <span id="fs-label">Pantalla completa</span>
+              </button>
+              <button class="hud-btn" id="restart-btn" type="button" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M20 9A8 8 0 0 0 6 6L4 10M4 15a8 8 0 0 0 14 3l2-4"/></svg>
+                <span>Reiniciar</span>
+              </button>
+              <a class="hud-btn hud-btn--link" href="game/index.html" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+                <span>Abrir en pestaña</span>
+              </a>
+            </div>
+
+            <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" disabled>
+              <span class="sound-icon" aria-hidden="true"><span></span></span>
+              <span id="sound-label">Audio activo</span>
+            </button>
+
+            <div class="hud-help">
+              <p class="hud-help-title">CONTROLES</p>
+              <p>Mueve el cursor o toca y arrastra. Clic o <kbd>espacio</kbd> para un impulso.</p>
+              <p class="hud-footnote">El audio se activa al entrar. El juego se pausa si sales de la sección. En móvil, gira el dispositivo para jugar en horizontal.</p>
+            </div>
+
+            <a class="game-credit" href="https://godotengine.org/" target="_blank" rel="noopener noreferrer">Hecho con Godot 4.7 <span aria-hidden="true">·</span> build web single-thread</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-experience" id="experiencia" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-rail">
+            <p class="section-label"><span>03</span> TRAYECTORIA</p>
+            <p class="section-rail-note">4 roles / 7+ años</p>
+          </div>
+          <div class="section-heading">
+            <h2 id="experience-title">Dónde he construido.</h2>
+            <p class="section-intro">Del diagnóstico en campo a la arquitectura de servicios: una trayectoria atravesada por redes, operación y software.</p>
+          </div>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item">
+            <div class="timeline-when">
+              <span class="timeline-date">2018 — HOY</span>
+              <span class="timeline-place">Caracas, VE</span>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <article class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>CANTV</h3>
+                  <p class="timeline-role">Consultor de Gestión de Tráfico II</p>
+                </div>
+                <span class="tag tag--live"><span class="status-dot" aria-hidden="true"></span> Actualidad</span>
+              </div>
+              <ul class="bullets">
+                <li>Diseñé y mantuve un sistema de telemetría para más de 200k mediciones diarias en redes ONT, con una reducción del 25% en fallas críticas.</li>
+                <li>Implementé monitoreo SNMP y un dashboard en React para redes ADSL, ahorrando cerca de 20 horas al mes en generación de reportes.</li>
+                <li>Administré servidores Linux, contenedores Docker y Nginx; automaticé tareas operativas con Bash.</li>
+              </ul>
+              <div class="timeline-metrics" aria-label="Resultados destacados">
+                <span>+200k / día</span>
+                <span>−25% fallas</span>
+                <span>−20 h / mes</span>
+                <span>SNMP</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-when">
+              <span class="timeline-date">2024 — 2025</span>
+              <span class="timeline-place">Remoto</span>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <article class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>Freekee Labs</h3>
+                  <p class="timeline-role">Backend Developer</p>
+                </div>
+                <span class="tag">Producto</span>
+              </div>
+              <ul class="bullets">
+                <li>Construí el backend de Hi-Sporter, plataforma de streaming deportivo, con microservicios en Go, LiveKit, Redis y MongoDB.</li>
+                <li>Sostuve más de 1k usuarios concurrentes con latencia inferior a 200ms, con despliegue en DigitalOcean.</li>
+              </ul>
+              <div class="timeline-metrics" aria-label="Stack y resultados destacados">
+                <span>+1k concurrentes</span>
+                <span>&lt;200ms</span>
+                <span>Go</span>
+                <span>LiveKit · Redis</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-when">
+              <span class="timeline-date">2024 — 2025</span>
+              <span class="timeline-place">Remoto</span>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <article class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>Verzus Live</h3>
+                  <p class="timeline-role">Backend Developer</p>
+                </div>
+                <span class="tag">Producto</span>
+              </div>
+              <ul class="bullets">
+                <li>Diseñé la arquitectura backend de una plataforma de e-sports con matchmaking, torneos, rewards y pagos multi-monedas.</li>
+                <li>La plataforma operó con más de 500 partidas simultáneas.</li>
+              </ul>
+              <div class="timeline-metrics" aria-label="Resultados destacados">
+                <span>+500 partidas</span>
+                <span>matchmaking</span>
+                <span>pagos multi-monedas</span>
+              </div>
+            </article>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-when">
+              <span class="timeline-date">JUL — OCT 2022</span>
+              <span class="timeline-place">Caracas, VE</span>
+            </div>
+            <div class="timeline-marker" aria-hidden="true"><span></span></div>
+            <article class="timeline-card">
+              <div class="timeline-card-head">
+                <div>
+                  <h3>Corporación Cárdenas, C.A.</h3>
+                  <p class="timeline-role">Ingeniero de Soporte Técnico</p>
+                </div>
+                <span class="tag">Soporte</span>
+              </div>
+              <ul class="bullets">
+                <li>Realicé instalación y mantenimiento de equipos bancarios de alta tecnología (Glory).</li>
+              </ul>
+              <div class="timeline-metrics" aria-label="Área de trabajo">
+                <span>hardware bancario</span>
+                <span>Glory</span>
+              </div>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-stack" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-rail">
+            <p class="section-label"><span>04</span> STACK</p>
+            <p class="section-rail-note">Herramientas / criterio</p>
+          </div>
+          <div class="section-heading">
+            <h2 id="stack-title">Herramientas con las que trabajo.</h2>
+            <p class="section-intro">Un stack elegido por función, no por moda: lo que hace falta para mover datos, observar redes y sostener servicios.</p>
+          </div>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">LANG</span><span class="stack-index">01</span></div>
+            <h3>Lenguajes</h3>
+            <ul class="chips">
+              <li>Go</li><li>Python</li><li>JavaScript</li><li>Bash</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">BACK</span><span class="stack-index">02</span></div>
+            <h3>Backend</h3>
+            <ul class="chips">
+              <li>Node.js</li><li>Gin</li><li>Fiber</li><li>Express</li><li>Flask</li><li>REST</li><li>Microservicios</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">FRONT</span><span class="stack-index">03</span></div>
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li>React</li><li>Astro</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">DATA</span><span class="stack-index">04</span></div>
+            <h3>Datos</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li><li>MongoDB</li><li>Redis</li><li>Pandas</li><li>Scraping</li><li>Telemetría</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">OPS</span><span class="stack-index">05</span></div>
+            <h3>Infra / DevOps</h3>
+            <ul class="chips">
+              <li>Docker</li><li>Nginx</li><li>Apache</li><li>Linux</li><li>DigitalOcean</li>
+            </ul>
+          </article>
+          <article class="stack-card">
+            <div class="stack-card-top"><span class="stack-code">NET</span><span class="stack-index">06</span></div>
+            <h3>Redes</h3>
+            <ul class="chips">
+              <li>SNMP</li><li>TCP/IP</li><li>Fibra óptica</li><li>ONT / ADSL</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stack-note">
+          <span class="stack-note-label"><span aria-hidden="true">//</span> EN EL RADAR</span>
+          <p>Explorando más a fondo cloud aplicado a microservicios y automatización de redes con Go.</p>
+          <span class="stack-note-line" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-rail">
+            <p class="section-label"><span>05</span> PROYECTOS</p>
+            <p class="section-rail-note">Selección / contexto real</p>
+          </div>
+          <div class="section-heading">
+            <h2 id="projects-title">Sistemas con contexto.</h2>
+            <p class="section-intro">Cinco piezas entre producto, operación y experimentación. Cada una resolvió un problema concreto.</p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card--seven">
+            <div class="project-visual project-visual--dashboard" aria-hidden="true">
+              <div class="ui-window">
+                <div class="ui-window-bar"><span class="ui-dots"><i></i><i></i><i></i></span><span>seller_panel_03</span><span>⌁</span></div>
+                <div class="ui-window-body">
+                  <div class="ui-sidebar"><span></span><span></span><span></span><span></span><span></span></div>
+                  <div class="ui-dashboard">
+                    <div class="ui-topline"><span>CATÁLOGO / RESUMEN</span><span>VISTA RESUMEN</span></div>
+                    <div class="ui-chart">
+                      <span class="ui-bar"></span>
+                      <span class="ui-bar"></span>
+                      <span class="ui-bar"></span>
+                      <span class="ui-bar ui-bar--hot"></span>
+                      <span class="ui-bar"></span>
+                      <span class="ui-bar"></span>
+                      <span class="ui-bar ui-bar--hot"></span>
+                      <span class="ui-bar"></span>
+                    </div>
+                    <div class="ui-rows"><span></span><span></span><span></span></div>
+                  </div>
+                </div>
+              </div>
+              <span class="visual-float">−15 h / mes</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>01 / HERRAMIENTA</span><span class="project-year">FULLSTACK</span></div>
+              <h3>Panel E-commerce <span>Walmart seller</span></h3>
+              <p class="project-role">Rol: desarrollo fullstack</p>
+              <ul class="project-bullets">
+                <li>Panel para gestionar la operación de un vendedor de Walmart, con Node.js y React.</li>
+                <li>Procesos de consolidación y reportes con Python/Pandas, ahorrando 15 h/mes.</li>
+              </ul>
+              <ul class="project-tags"><li>Node.js</li><li>React</li><li>Python</li><li>Pandas</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card--five">
+            <div class="project-visual project-visual--ar" aria-hidden="true">
+              <div class="ar-grid"></div>
+              <span class="ar-corner ar-corner--tl"></span><span class="ar-corner ar-corner--tr"></span>
+              <span class="ar-corner ar-corner--bl"></span><span class="ar-corner ar-corner--br"></span>
+              <span class="ar-label">ANCHOR · 0.82m</span>
+              <div class="ar-object"><span></span><span></span><span></span></div>
+              <span class="ar-ring"></span>
+              <span class="ar-scanline"></span>
+              <span class="ar-tech">WEBAR / 8TH WALL</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>02 / EXPERIENCIA</span><span class="project-year">WEBAR</span></div>
+              <h3>Realidad Aumentada <span>Estivaneli</span></h3>
+              <p class="project-role">Rol: desarrollo de experiencia</p>
+              <ul class="project-bullets">
+                <li>Experiencia de realidad aumentada para web construida con 8th Wall y JavaScript.</li>
+                <li>Modelado y preparación de assets 3D en Blender.</li>
+              </ul>
+              <ul class="project-tags"><li>8th Wall</li><li>JavaScript</li><li>Blender</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card--five">
+            <div class="project-visual project-visual--telemetry" aria-hidden="true">
+              <div class="telemetry-head"><span>ONT / NODO-07</span><span class="telemetry-live"><i></i> LIVE</span></div>
+              <div class="telemetry-chart">
+                <span class="telemetry-gridline"></span><span class="telemetry-gridline"></span><span class="telemetry-gridline"></span>
+                <span class="telemetry-area"></span>
+                <span class="telemetry-path"></span>
+                <i class="telemetry-point telemetry-point--1"></i><i class="telemetry-point telemetry-point--2"></i><i class="telemetry-point telemetry-point--3"></i>
+              </div>
+              <div class="telemetry-numbers">
+                <span class="telemetry-big">+200k</span>
+                <span>mediciones / día</span>
+              </div>
+              <div class="telemetry-foot"><span>SNMP</span><span>REACT</span><span>−25% FALLAS</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>03 / OPERACIÓN</span><span class="project-year">CANTV</span></div>
+              <h3>Telemetría <span>CANTV</span></h3>
+              <p class="project-role">Rol: diseño y desarrollo backend</p>
+              <ul class="project-bullets">
+                <li>Sistema de telemetría para +200k mediciones diarias en redes ONT, con −25% de fallas críticas.</li>
+                <li>Monitoreo SNMP y dashboard React para redes ADSL, ahorrando 20 h/mes en reportes.</li>
+              </ul>
+              <ul class="project-tags"><li>Telemetría</li><li>SNMP</li><li>React</li><li>Linux</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card--seven">
+            <div class="project-visual project-visual--stream" aria-hidden="true">
+              <div class="stream-noise"></div>
+              <span class="stream-kicker">HI-SPORTER / LIVE</span>
+              <div class="stream-center">
+                <span class="stream-ring stream-ring--1"></span>
+                <span class="stream-ring stream-ring--2"></span>
+                <span class="stream-play">▶</span>
+              </div>
+              <div class="stream-eq"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+              <div class="stream-data"><span>LATENCIA</span><strong>&lt;200ms</strong><span>CONCURRENTES 1k+</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>04 / STREAMING</span><span class="project-year">2024—25</span></div>
+              <h3>Hi-Sporter <span>streaming deportivo</span></h3>
+              <p class="project-role">Rol: Backend Developer · Freekee Labs</p>
+              <ul class="project-bullets">
+                <li>Backend con microservicios Go, LiveKit, Redis y MongoDB para +1k usuarios concurrentes.</li>
+                <li>Latencia por debajo de 200ms y despliegue en DigitalOcean.</li>
+              </ul>
+              <ul class="project-tags"><li>Go</li><li>LiveKit</li><li>Redis</li><li>MongoDB</li><li>DigitalOcean</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-card--twelve project-card--horizontal">
+            <div class="project-body">
+              <div class="project-meta"><span>05 / E-SPORTS</span><span class="project-year">2024—25</span></div>
+              <h3>Verzus Live <span>matchmaking a escala</span></h3>
+              <p class="project-role">Rol: Backend Developer · Verzus Live</p>
+              <ul class="project-bullets">
+                <li>Arquitectura backend para una plataforma de e-sports con matchmaking, torneos y rewards.</li>
+                <li>Pagos multi-monedas y operación estable con +500 partidas simultáneas.</li>
+              </ul>
+              <ul class="project-tags"><li>Matchmaking</li><li>Torneos</li><li>Rewards</li><li>Pagos multi-monedas</li></ul>
+            </div>
+            <div class="project-visual project-visual--bracket" aria-hidden="true">
+              <div class="bracket-head"><span>BRACKET // LIVE</span><span class="bracket-live"><i></i> 500+</span></div>
+              <div class="bracket">
+                <div class="bracket-round bracket-round--r1"><span>BUG.EXE</span><span class="is-win">POCH_07</span></div>
+                <div class="bracket-round bracket-round--r1"><span>NULLBYTE</span><span>SIGNAL</span></div>
+                <div class="bracket-round bracket-round--final"><span class="is-win">POCH_07</span><span>FINALS</span></div>
+                <span class="bracket-connector bracket-connector--a"></span>
+                <span class="bracket-connector bracket-connector--b"></span>
+                <span class="bracket-connector bracket-connector--c"></span>
+              </div>
+              <div class="bracket-foot"><span>TOURNAMENT_04</span><span>REWARDS: ON</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel">
+          <div class="contact-main">
+            <p class="section-label"><span>06</span> CONTACTO</p>
+            <h2 id="contact-title">¿Construimos algo<br>que aguante?</h2>
+            <p class="contact-lede">Estoy abierto a oportunidades fullstack/backend y a proyectos donde las redes, los datos y el software tengan que entenderse.</p>
+            <a class="contact-email" href="mailto:keiberup.dev@gmail.com">keiberup.dev@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="contact-side">
+            <p class="contact-side-title">CANALES DIRECTOS</p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list-label">Email</span>
+                <a href="mailto:keiberup.dev@gmail.com">keiberup.dev@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-list-label">Teléfono</span>
+                <a href="tel:+584129445775">+58 412 944 57 75</a>
+              </li>
+              <li>
+                <span class="contact-list-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/keiber-urbila/" target="_blank" rel="noopener noreferrer">/in/keiber-urbila <span aria-hidden="true">↗</span></a>
+              </li>
+              <li>
+                <span class="contact-list-label">Web</span>
+                <a href="https://keiberup.dev/" target="_blank" rel="noopener noreferrer">keiberup.dev <span aria-hidden="true">↗</span></a>
+              </li>
+              <li>
+                <span class="contact-list-label">Ubicación</span>
+                <span class="contact-static">Caracas, Venezuela <span aria-hidden="true">·</span> GMT−4</span>
+              </li>
+            </ul>
+            <a class="btn btn-primary contact-cta" href="mailto:keiberup.dev@gmail.com">Escribir un correo <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="contact-marquee" aria-hidden="true">
+          <span>DISPONIBLE PARA NUEVOS RETOS</span><span>·</span><span>CARACAS, VE</span><span>·</span><span>BACKEND + REDES + DATOS</span><span>·</span><span>DISPONIBLE PARA NUEVOS RETOS</span><span>·</span><span>CARACAS, VE</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand footer-brand" href="#inicio" aria-label="Volver al inicio">
+        <span class="brand-mark" aria-hidden="true"><img src="assets/img/poch-icon.png" width="16" height="16" alt=""></span>
+        <span class="brand-text">keiberup<span class="brand-cursor" aria-hidden="true">_</span></span>
+      </a>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#jugar">Jugar</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="footer-top-link" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Keiber Urbila. Diseñado y construido por Keiber.</p>
+      <p class="footer-status"><span class="status-dot" aria-hidden="true"></span> Sistema en línea <span class="footer-plus" aria-hidden="true">+1 vida</span></p>
+    </div>
+  </footer>
+
+  <!-- POCHLAND · entorno ambiental de fondo -->
+  <div class="ambient-boot" id="ambient-boot" role="status" aria-live="polite" aria-label="Cargando el entorno POCHLAND">
+    <div class="ambient-boot__scene" aria-hidden="true">
+      <img class="ambient-boot__sprite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABoklEQVR42u2ZsUoDQRRFZySKhbhWoohRUBQrRQgRFlLZ6BesHyHY5gtsBf9BC3ttrAQhi5VgI1hIQJB0EQuRgLbOK2Z4THbdkHO7Yd5OwuHduzM71pSsZGH75+94a3fDme9cX9mYeq0mzJgLAOMOwFbd8zPJtFP/9pw79UubTad+ea2uyggsAAAyoFjPSw9Lffa/jK8+NK/1PB0AAAAMNwNCnpcelirb83QAAABQbAbEejyUGaH15VmBDgAAAIabAdLzrXTeW99urKjWPzh7MJqzhNbzdAAAAFBsBmg9r82E/vuj95sg+wAsAACVakX/gPSw1M1JQ1XPPgALAKBa+4CQDiefnPFFd+CM5xZ3VPXWWksHAAAA1ckA+R6X6q7ue+frr7eq+izLyAAAAGCE7gVCGRH7PYAOAAAA/ncfMNX8cOa/89lC/zAZgAUAUG4GhDyv1fnRqar++LLtzZjYTMACADDcC0Rpr7bune8MXrye1q5HBwAAAOVmgHzPJrk4/6e6jLi77/kfSAPPmx4dAAAAjNDdoPY8r12fswAWAECUfgFTc4uXPFd0cwAAAABJRU5ErkJggg==" width="64" height="64" alt="" aria-hidden="true">
+      <span class="ambient-boot__star ambient-boot__star--a"></span>
+      <span class="ambient-boot__star ambient-boot__star--b"></span>
+      <span class="ambient-boot__star ambient-boot__star--c"></span>
+    </div>
+    <div class="ambient-boot__panel">
+      <p class="ambient-boot__kicker">KEIBERUP.DEV <span aria-hidden="true">//</span> ENTORNO VIVO</p>
+      <p class="ambient-boot__title">POCHLAND</p>
+      <p class="ambient-boot__sub">SIGUE LA LUZ</p>
+      <div class="ambient-boot__meter" aria-hidden="true"><i id="ambient-boot-fill"></i></div>
+      <p class="ambient-boot__status"><span id="ambient-boot-status">Cargando el mundo</span> <span id="ambient-boot-pct">0%</span></p>
+      <p class="ambient-boot__note">Poch se prepara para acompañarte por todo el portafolio.</p>
+      <button class="ambient-boot__skip" id="ambient-boot-skip" type="button">Saltar intro <span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+
+  <aside class="ambient-hud" id="ambient-hud" aria-label="Entorno POCHLAND de fondo">
+    <div class="ambient-hud__top">
+      <span class="ambient-hud__avatar" aria-hidden="true"></span>
+      <span class="ambient-hud__name"><strong>POCH</strong><small id="ambient-hud-brief">SIGUE TU CURSOR</small></span>
+      <span class="ambient-hud__dot" id="ambient-hud-dot" aria-hidden="true"></span>
+      <button class="ambient-hud__toggle" id="ambient-hud-toggle" type="button" aria-expanded="false" aria-controls="ambient-hud-body" aria-label="Expandir el panel del entorno">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+    <span class="ambient-hud__progress" aria-hidden="true"><i id="ambient-hud-progress-fill"></i></span>
+    <div class="ambient-hud__body" id="ambient-hud-body">
+      <div class="ambient-hud__statusrow">
+        <span class="ambient-hud__kicker">SEÑAL</span>
+        <span class="ambient-hud__value" id="ambient-signal-value">0%</span>
+      </div>
+      <div class="ambient-hud__bar" id="ambient-signal-bar" role="progressbar" aria-label="Señal de Poch en el entorno" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><i id="ambient-signal-fill"></i></div>
+      <div class="ambient-hud__stats">
+        <span><span class="ambient-hud__kicker">PAQUETES</span> <b id="ambient-packets">00</b></span>
+        <span class="ambient-hud__state" id="ambient-state">CARGANDO</span>
+      </div>
+      <div class="ambient-preload" id="ambient-preload">
+        <div class="ambient-preload__row">
+          <span class="ambient-hud__kicker">JUEGO COMPLETO</span>
+          <span class="ambient-preload__state" id="ambient-preload-state">EN COLA</span>
+        </div>
+        <div class="ambient-preload__bar" id="ambient-preload-bar"><i id="ambient-preload-fill"></i></div>
+        <p class="ambient-preload__note" id="ambient-preload-note">Se precarga en segundo plano para entrar al instante.</p>
+      </div>
+      <div class="ambient-hud__actions">
+        <a class="ambient-hud__cta" href="#jugar">Jugar completo <span aria-hidden="true">→</span></a>
+        <button class="ambient-hud__pause" id="ambient-pause" type="button" aria-pressed="false">Pausar entorno</button>
+      </div>
+    </div>
+  </aside>
+</body>
+</html>
