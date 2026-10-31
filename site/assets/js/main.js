@@ -786,4 +786,12 @@
   if (yearsMetricValue) {
     yearsMetricValue.textContent = YEARS + "+";
   }
+
+  const heroLede = document.querySelector('.hero-lede');
+  if (heroLede) {
+    heroLede.textContent = heroLede.textContent.replace(
+      /Siete años/,
+      YEARS + " años"
+    );
+  }
 })();
