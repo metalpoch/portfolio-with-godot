@@ -763,3 +763,21 @@
     }
   }
 })();
+
+/* ------------------------------------------------------------------
+   Tiempo de experiencia dinámico (actualiza automáticamente cada año)
+------------------------------------------------------------------ */
+(function () {
+  "use strict";
+
+  const START_YEAR = 2019;
+  const CURRENT_YEAR = new Date().getFullYear();
+  const YEARS = CURRENT_YEAR - START_YEAR;
+
+  const metricValue = document.querySelector('.metric-value');
+  const metricLabel = document.querySelector('.metric-label');
+
+  if (metricValue) {
+    metricValue.textContent = YEARS + "+";
+  }
+})();
