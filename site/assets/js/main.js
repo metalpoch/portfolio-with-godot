@@ -774,10 +774,16 @@
   const CURRENT_YEAR = new Date().getFullYear();
   const YEARS = CURRENT_YEAR - START_YEAR;
 
-  const metricValue = document.querySelector('.metric-value');
-  const metricLabel = document.querySelector('.metric-label');
+  const metrics = document.querySelectorAll('.hero-metrics .metric');
+  let yearsMetricValue = null;
+  metrics.forEach(function(metric) {
+    const code = metric.querySelector('.metric-code');
+    if (code && code.textContent.trim() === 'YRS') {
+      yearsMetricValue = metric.querySelector('.metric-value');
+    }
+  });
 
-  if (metricValue) {
-    metricValue.textContent = YEARS + "+";
+  if (yearsMetricValue) {
+    yearsMetricValue.textContent = YEARS + "+";
   }
 })();
