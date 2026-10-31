@@ -1,0 +1,8 @@
+name = "pochland"
+compatibility_date = "2026-01-01"
+main = "site/index.html"
+
+# Para Workers con assets estáticos (sitio estático como assets)
+[assets]
+directory = "."
+bucket = "."
