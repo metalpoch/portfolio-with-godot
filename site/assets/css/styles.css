@@ -3677,24 +3677,25 @@ body.game-pseudo-fs .site-header {
 }
 
 .contact-marquee {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  display: block;
   width: max-content;
-  max-width: 100%;
+  margin-inline: auto;
   margin-top: 24px;
-  overflow: hidden;
   font-family: var(--font-mono);
   font-size: 8px;
   line-height: 1.4;
   letter-spacing: 0.08em;
   color: var(--muted);
   white-space: nowrap;
-  animation: marquee 26s linear infinite;
 }
 
 .contact-marquee span:nth-child(even) {
   color: var(--green-bright);
+}
+
+.contact-marquee span {
+  display: inline-flex;
+  align-items: center;
 }
 
 /* ---------- Footer ---------- */
@@ -3707,8 +3708,9 @@ body.game-pseudo-fs .site-header {
 
 .footer-top {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 26px;
   padding-bottom: 26px;
 }
